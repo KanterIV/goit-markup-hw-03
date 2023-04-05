@@ -1,0 +1,238 @@
+            /* Цвета */
+/* основной цвет текста #434455 */
+/* вторичный цвет текса #2E2F42 */
+/* акцент   #4D5AE5 */
+/* вторичный акцент #404BBF */
+/* белый основной #F4F4FD */
+/* белый вторичный #FFFFFF */
+/* цвет фона страницы основной #FFFFFF */
+/* цвет фона страницы вторичный #F4F4FD */
+
+:root{
+
+    /* ===Font=== */
+ --primary-font: 'Roboto', sans-serif;
+ --secondary-font: 'Raleway', sans-serif;
+    /* ===Color=== */
+ --primary-text-color: #434455;
+ --secondary-text-color: #2E2F42;
+ --primary-accent-color: #4D5AE5;
+ --secondary-accent-color: #404BBF;
+ --primary-white-color: #F4F4FD;
+ --secondary-white-color: #FFFFFF;
+ --primary-bgc: #FFFFFF;
+ --secondary-bgc: #F4F4FD;
+ --hero-bgc: #2E2F42;
+
+} 
+
+
+    /* ================= Resetting styles =================== */
+
+.list{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+}
+    /* =================/Resetting styles==================== */
+
+
+    /* =================== COMPONENTS ======================= */
+
+.logo{
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--primary-accent-color);
+    }
+
+.heading{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--secondary-text-color);
+}
+
+.subtitle{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}   
+    
+    /* =================== /COMPONENTS ======================== */
+
+body{
+    font-family: var(--primary-font);
+    background-color: var(--primary-bgc);
+    color: var(--primary-text-color);
+}
+
+                                                 /**
+                                                   |============================
+                                                   | Main-page
+                                                   |============================
+                                                 */
+
+    /* ===================== Top line ======================== */
+
+.logo-top{
+    color: var(--secondary-text-color);
+}
+
+.menu-link{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.menu-link:hover, 
+.menu-link:focus{
+    color: var(--secondary-accent-color);
+}
+
+.contact-info{
+    font-style:normal;
+}
+
+.contact-details{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.contact-details:hover,
+.contact-details:focus{
+    color:var(--secondary-accent-color);
+}
+
+
+    /* ================== /Top line ====================== */
+
+    /* ====================== Hero ======================= */
+
+ .hero{
+    background-color: var(--hero-bgc);
+ }
+
+ .hero-title{
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--secondary-white-color);
+
+ }
+
+ .hero-btn{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--secondary-white-color);
+    background-color: var(--primary-accent-color);
+    cursor: pointer;
+ }
+
+ .hero-btn:hover,
+ .hero-btn:focus{
+    background-color: var(--secondary-accent-color);
+ }
+
+    /* ===================== /Hero ========================= */
+
+
+    /* ==================== Studio features ================ */
+
+    /* =================== /Studio features ================ */
+
+
+    /* =================== Work examples =================== */
+
+    /* ================== /Work examples =================== */
+
+
+    /* ====================== Team ========================= */
+
+.team{
+    background-color: var(--secondary-bgc);
+}
+
+.team-item{
+    background-color: var(--primary-bgc);
+}
+
+.team-title{
+    text-align: center;
+}
+
+.team-text{
+    text-align: center;
+}
+    /* ====================== Team ======================== */
+
+
+    /* ================== Footer ========================= */
+.footer{
+    background-color: var(--secondary-text-color);
+    }
+    
+
+.logo-bottom{
+    color: var(--primary-white-color)
+}
+
+.footer-text{
+    color: var(--primary-white-color);
+}
+
+     /* ================= /Footer ======================= */
+
+
+                                             /**
+                                               |============================
+                                               | Portfolio-page
+                                               |============================
+                                             */
+
+
+/* ==================== Our projects ================ */
+.filters-btn{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primary-accent-color);
+    background-color: var(--primary-white-color);
+    cursor: pointer;
+}
+
+.filters-btn:hover,
+.filters-btn:focus{
+    color: var(--secondary-white-color);
+    background-color: var(--secondary-accent-color);
+}
+
+.projects-link > .text{
+    color: var(--primary-text-color);
+}
+/* ==================== /Our projects ================ */
