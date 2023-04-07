@@ -83,6 +83,8 @@ img{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--secondary-text-color);
+
+    margin-bottom: 72px;
 }
 
 .subtitle{
@@ -91,6 +93,7 @@ img{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+    margin-bottom: 8px;
 }
 
 .text{
@@ -122,6 +125,11 @@ img{
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.team-member{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
     
     /* =================== /COMPONENTS ======================== */
@@ -212,9 +220,16 @@ body{
 
  .hero{
     background-color: var(--hero-bgc);
+    padding-top: 188px;
+    padding-bottom: 188px;
  }
 
  .hero-title{
+    width: 496px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+    
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -224,11 +239,19 @@ body{
  }
 
  .hero-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    
     color: var(--secondary-white-color);
     background-color: var(--primary-accent-color);
     cursor: pointer;
@@ -243,11 +266,41 @@ body{
 
 
     /* ==================== Studio features ================ */
+ .features{
+    padding-top: 120px;
+    padding-bottom: 120px;
+ }
 
+ .features-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+ }
+
+ .features-item{
+    display: block;
+    width: calc((100% - 72px)/4);
+ }
     /* =================== /Studio features ================ */
 
 
     /* =================== Work examples =================== */
+
+ .examples{
+    padding-bottom: 120px;
+ }
+ 
+ .examples-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+ }
+
+
+ .examples-item{
+    width: calc((100% - 48px)/3);
+ }
 
     /* ================== /Work examples =================== */
 
@@ -256,10 +309,23 @@ body{
 
 .team{
     background-color: var(--secondary-bgc);
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px
 }
 
 .team-item{
+    width: calc((100% - 72px)/4);
     background-color: var(--primary-bgc);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-title{
