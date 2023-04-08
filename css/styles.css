@@ -23,7 +23,7 @@
  --primary-bgc: #FFFFFF;
  --secondary-bgc: #F4F4FD;
  --hero-bgc: #2E2F42;
- --header-border-bottom: #E7E9FC
+ --border-main: #E7E9FC
 
 } 
 
@@ -62,8 +62,6 @@ img{
 
 .logo{
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
     
     font-family: var(--secondary-font);
     text-transform: uppercase;
@@ -148,7 +146,7 @@ body{
 
     /* ===================== Top line ======================== */
 .page-header{
-    border-bottom: 1px solid var(--header-border-bottom);
+    border-bottom: 1px solid var(border-main);
 }
 
 
@@ -341,6 +339,8 @@ body{
     /* ================== Footer ========================= */
 .footer{
     background-color: var(--secondary-text-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
     }
     
 
@@ -350,6 +350,8 @@ body{
 
 .footer-text{
     color: var(--primary-white-color);
+    width: 264px;
+    margin-top: 16px;
 }
 
      /* ================= /Footer ======================= */
@@ -363,7 +365,25 @@ body{
 
 
 /* ==================== Our projects ================ */
+
+.projects{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    gap: 24px;
+}
+
 .filters-btn{
+    display: block;
+    padding: 12px 24px;
+    border: 1px solid var(border-main);
+    border-radius: 4px;
+    
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -382,5 +402,23 @@ body{
 
 .projects-link > .text{
     color: var(--primary-text-color);
+}
+
+.projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.projects-list-item{
+    width: calc((100% - 48px)/3);
+}
+
+.project-name{
+    padding-top: 32px;
+    padding-left: 16px;
+    border: 1px solid var(--border-main);
+    border-top: none;
 }
 /* ==================== /Our projects ================ */
